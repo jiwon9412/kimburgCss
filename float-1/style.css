@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  height: 100vh;
+  background-color: #000;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  background-color: #fff;
+}
+
+.nav-wrap {
+  border-bottom: 1px solid #8492a6;
+}
+
+.nav-wrap::after {
+  content: "";
+  display: block; /* clear 는 block에만 가능*/
+  clear: left;
+}
+
+.nav-menu {
+  float: left;
+  margin-right: 16px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 16px 20px;
+}
+.nav-menu a:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+  font-weight: 500;
+}
