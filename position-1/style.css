@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-color: #333;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #273444;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.user-card {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px 20px;
+  background-color: #fff;
+}
+
+.user-photo {
+  float: left;
+  position: relative;
+}
+
+.user-name {
+  float: left;
+  margin: 10px 20px;
+  font-size: 50px;
+}
+
+.user-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.user-status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  z-index: 2;
+  border: 4px solid #fff;
+}
