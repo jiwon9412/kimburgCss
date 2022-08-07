@@ -1,0 +1,110 @@
+body {
+  background-color: #7d858f;
+}
+
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+.sr-only {
+  position: absolute;
+  z-index: -100;
+  width: 1;
+  opacity: 0;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  height: 200px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.card-image {
+  background-image: url("./assets/img-house.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  margin-right: 24px;
+}
+
+.like-button {
+  position: absolute;
+  top: 48px;
+  left: 48px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #fff;
+  background-image: url("./assets/icon-favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus-badge {
+  width: 48px;
+  height: 22px;
+  padding: 1px 8px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: #92174d;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.property-type span {
+  color: #7d858f;
+  font-size: 16px;
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background-image: url("./assets/icon-star.svg");
+  background-size: cover;
+}
+
+.property-rate span {
+  color: #7d858f;
+}
+
+.card-title {
+  font-weight: 400;
+}
+
+.property-detail dd {
+  display: inline-block;
+  margin-left: 0;
+  color: #7d858f;
+}
+
+.property-detail dd span::after {
+  content: "·";
+  margin: 6px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}

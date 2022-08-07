@@ -1,0 +1,62 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+body {
+  background-color: #e5e5e5;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 216px;
+  background-color: #fff;
+}
+
+.loading-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Mulish";
+  font-weight: 400;
+  animation-name: fontColor;
+  animation-duration: 1000ms;
+}
+
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 12px;
+  background-color: #e5eaef;
+  border-radius: 100px;
+}
+
+.progress-bar-gauge {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  background-color: aquamarine;
+  animation-name: fillBar;
+  animation-duration: 1000ms;
+  border-radius: 100px;
+}
+
+@keyframes fontColor {
+  from {
+    color: #e5eaef;
+  }
+
+  to {
+    color: #333;
+  }
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
