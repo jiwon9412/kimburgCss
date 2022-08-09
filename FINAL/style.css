@@ -5,6 +5,7 @@
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: #e5e5e5;
 }
 
 /* Reset CSS */
@@ -48,38 +49,37 @@ p {
 }
 
 .container {
-  padding : 0;
+  padding: 0;
 }
 
 /* landing */
 .landing {
   display: flex;
   flex-direction: column;
-  justify-content : center;
-  align-items : center;
-  width : 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 568px;
-  padding : 154px 15px;
-  background-color: #FDDED8;
+  padding: 154px 15px;
+  background-color: #fdded8;
 }
 
-.landing h1{
-  font-size : 40px;
-  font-weight : 700;
+.landing h1 {
+  font-size: 40px;
+  font-weight: 700;
   line-height: 40px;
   text-align: center;
   margin-bottom: 24px;
-  width : 330px;
-  height : 120px;
+  width: 330px;
+  height: 120px;
 }
 
 .landing p {
-  width : 290px;
-  height : 44px;
-  font-weight : 400;
+  width: 290px;
+  height: 44px;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 24px;
-  
 }
 
 .landingBtn {
@@ -87,45 +87,190 @@ p {
 }
 
 .landing button {
-  width : 140px;
-  height : 48px;
-  border-radius : 2px;
+  width: 140px;
+  height: 48px;
+  border-radius: 2px;
   border-style: none;
   font-size: 15px;
-  font-weight : 700;
+  font-weight: 700;
 }
 
 .applyBtn {
-  color : #fff;
-  background-color: #3040C4;
-  
+  color: #fff;
+  background-color: #3040c4;
 }
 
 .moreBtn {
-  color : #3040C4;
-  background-color : #fff;
-  margin-left : 8px;
+  color: #3040c4;
+  background-color: #fff;
+  margin-left: 8px;
 }
 
 /* Service */
 .service {
-  display : flex;
-  flex-direction : column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width : 100%;
-  height : 496px;
-  background-color: #F4F5F7;
-  padding : 80px 15px;
+  width: 100%;
+  height: 496px;
+  background-color: #f4f5f7;
+  padding: 80px 15px;
 }
 
 .service1 {
-  margin-bottom : 40px;
+  margin-bottom: 40px;
 }
 
 .service h1 {
-  font-size : 22px;
+  font-size: 22px;
   margin-bottom: 16px;
+}
+
+/* program */
+.program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 15px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.programContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 272px;
+}
+
+.programContent .category {
+  color: #009b4d;
+  font-weight: 700;
+  margin-bottom: 8px;
+  width: 290px;
+}
+
+.programContent .title {
+  font-size: 34px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  width: 290px;
+}
+
+.programContent .description {
+  line-height: 24px;
+  margin-bottom: 32px;
+  width: 290px;
+}
+
+.programImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 913px;
+}
+
+.programImg .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 290px;
+  height: 291px;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+  margin-bottom: 20px;
+}
+
+.programImg .box img {
+  display: block;
+  width: 142px;
+  height: 195px;
+  margin-bottom: 16px;
+}
+
+.programImg .box h4 {
+  margin-bottom: 32px;
+}
+
+/* curriculum */
+
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 706px;
+  background-color: #fff;
+}
+
+.curriculumHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.curriculumHeader .category {
+  color: #0189d1;
+  font-weight: 700;
+  margin-bottom: 8px;
+  width: 290px;
+}
+
+.curriculumHeader .title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 24px;
+  width: 290px;
+}
+
+.curriculumHeader .description {
+  margin-bottom: 44px;
+  width: 290px;
+}
+
+.curriculumHeader .applyBtn {
+  width: 140px;
+  height: 48px;
+  border-radius: 2px;
+  border-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3040c4;
+  margin-bottom: 60px;
+}
+
+.curriculumHeader img {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.curriculumDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.curriculumDetail .detail {
+  width: 290px;
+  height: 88px;
+}
+
+.curriculumDetail .detail:first-child {
+  margin-bottom: 40px;
 }
 
 /* >=768px (Desktop) */
@@ -138,8 +283,8 @@ p {
 
   /* landing (Desktop) */
   .landing h1 {
-    font-size : 60px;
-    width : 900px;
+    font-size: 60px;
+    width: 900px;
     line-height: 70px;
     margin-bottom: 32px;
   }
@@ -149,38 +294,124 @@ p {
   }
 
   .landing button {
-    width : 160px;
-    height : 56px;
+    width: 160px;
+    height: 56px;
     font-size: 18px;
-    
   }
 
   /* Service (Desktop) */
   .service {
-    display : flex;
-    flex-direction : row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height : 340px;
-    padding : 80px 15px;
+    height: 340px;
+    padding: 80px 15px;
   }
 
   .service1 {
-    margin-bottom : 0; 
-    margin-right : 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .service h1 {
-    font-size : 26px;
+    font-size: 26px;
   }
 
-  /* .service1 h1 {
-    padding-right : 30px;
+  /* program (Desktop)*/
+  .program {
+    width: 100%;
   }
 
-  .service2 h1 {
-    padding-right : 60px;
+  .programContent {
+    align-items: center;
+    width: 100%;
+  }
+  .programContent .category {
+    width: 100px;
+  }
+
+  .programContent .title {
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    width: 500px;
+  }
+
+  .programContent .description {
+    text-align: center;
+    width: 770px;
+  }
+
+  .programImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 299px;
+  }
+
+  .programImg .box {
+    width: 290px;
+    height: 299px;
+    box-shadow: 0px 1px 3px 0px #0000001a;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  /* .programImg .box :nth-child(2) {
+    background-color: #3141c5;
   } */
+
+  .programImg .box:last-child {
+    margin-right: 0;
+  }
+
+  /* curriculum */
+
+  .curriculum {
+    height: 728px;
+  }
+
+  .curriculumHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .curriculumHeader .title {
+    width: 450px;
+  }
+
+  .curriculumHeader .description {
+    width: 450px;
+    margin-bottom: 72px;
+  }
+
+  .curriculumHeader img {
+    visibility: visible;
+    width: 425px;
+    height: 426px;
+    margin-left: 43px;
+  }
+
+  .curriculumDetail {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .curriculumDetail .detail {
+    font-size: 18px;
+    width: 450px;
+    height: 78px;
+  }
+
+  .curriculumDetail .detail:first-child {
+    margin-bottom: 0;
+  }
 }
 
 /* bootstrap grid 1200px 이상 고정 */
