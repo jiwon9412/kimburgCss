@@ -47,6 +47,72 @@ p {
   letter-spacing: -0.01em;
 }
 
+.container {
+  padding :0;
+  margin : 0;
+}
+
+.col-12 {
+  padding : 0;
+}
+
+/* landing */
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content : center;
+  align-items : center;
+  width : 100%;
+  height: 568px;
+  padding : 154px 15px;
+  background-color: #FDDED8;
+}
+
+.landing h1{
+  font-size : 40px;
+  font-weight : 700;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 40px;
+  width : 100%;
+  height : 120px;
+}
+
+.landing p {
+  width : 290px;
+  height : 44px;
+  font-weight : 400;
+  text-align: center;
+  margin-bottom: 24px;
+  
+}
+
+.landingBtn {
+  display: flex;
+}
+
+.landing button {
+  width : 140px;
+  height : 48px;
+  border-radius : 2px;
+  border-style: none;
+  font-weight : 700;
+}
+
+.applyBtn {
+  color : #fff;
+  background-color: #3040C4;
+  
+}
+
+.moreBtn {
+  color : #3040C4;
+  background-color : #fff;
+  margin-left : 8px;
+}
+
+
 /* >=768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -54,11 +120,38 @@ p {
     font-size: 22px;
     line-height: 1.3636363636;
   }
+
+  /* landing (Desktop) */
+
+  .landing {
+    width : 100%;
+    height: 568px;
+    padding : 120px 255px;
+    background-color: #FDDED8;
+  }
+
+  .landing h1{
+    font-size : 70px;
+    margin-bottom: 32px;
+    line-height: 72px;
+    width : 100%;
+  height : 144px;
+  }
+
+  .landing p {
+    width : 370px;
+    height: 64px;
+    font-weight : 400;
+    text-align: center;
+    margin-bottom: 46px;
+    
+  }
 }
 
 /* bootstrap grid 1200px 이상 고정 */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 960px !important;
+    max-width: 1440px !important;
+    
   }
 }
