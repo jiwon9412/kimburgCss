@@ -48,11 +48,6 @@ p {
 }
 
 .container {
-  padding :0;
-  margin : 0;
-}
-
-.col-12 {
   padding : 0;
 }
 
@@ -74,8 +69,7 @@ p {
   line-height: 40px;
   text-align: center;
   margin-bottom: 24px;
-  line-height: 40px;
-  width : 100%;
+  width : 330px;
   height : 120px;
 }
 
@@ -97,6 +91,7 @@ p {
   height : 48px;
   border-radius : 2px;
   border-style: none;
+  font-size: 15px;
   font-weight : 700;
 }
 
@@ -112,6 +107,26 @@ p {
   margin-left : 8px;
 }
 
+/* Service */
+.service {
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+  height : 496px;
+  background-color: #F4F5F7;
+  padding : 80px 15px;
+}
+
+.service1 {
+  margin-bottom : 40px;
+}
+
+.service h1 {
+  font-size : 22px;
+  margin-bottom: 16px;
+}
 
 /* >=768px (Desktop) */
 @media screen and (min-width: 768px) {
@@ -122,36 +137,55 @@ p {
   }
 
   /* landing (Desktop) */
-
-  .landing {
-    width : 100%;
-    height: 568px;
-    padding : 120px 255px;
-    background-color: #FDDED8;
-  }
-
-  .landing h1{
-    font-size : 70px;
+  .landing h1 {
+    font-size : 60px;
+    width : 900px;
+    line-height: 70px;
     margin-bottom: 32px;
-    line-height: 72px;
-    width : 100%;
-  height : 144px;
   }
 
   .landing p {
-    width : 370px;
-    height: 64px;
-    font-weight : 400;
-    text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 32px;
+  }
+
+  .landing button {
+    width : 160px;
+    height : 56px;
+    font-size: 18px;
     
   }
+
+  /* Service (Desktop) */
+  .service {
+    display : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+    height : 340px;
+    padding : 80px 15px;
+  }
+
+  .service1 {
+    margin-bottom : 0; 
+    margin-right : 20px;
+  }
+
+  .service h1 {
+    font-size : 26px;
+  }
+
+  /* .service1 h1 {
+    padding-right : 30px;
+  }
+
+  .service2 h1 {
+    padding-right : 60px;
+  } */
 }
 
 /* bootstrap grid 1200px 이상 고정 */
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1440px !important;
-    
+    max-width: 960px !important;
   }
 }
